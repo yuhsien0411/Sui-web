@@ -53,7 +53,7 @@ document.querySelector('.depositButton').addEventListener('click', function() {
         const top = window.screenY;
 
         // 打开新窗口
-        window.open('./wallet.html', 'newwindow', `width=${width},height=${height},left=${left},top=${top}`);
+        window.open('https://yuhsien0411.github.io/Sui-web/wallet.html', 'newwindow', `width=${width},height=${height},left=${left},top=${top}`);
     }
 });
 
@@ -74,6 +74,6 @@ if (!isWalletConnected) {
     const top = window.screenY;
 
     // 打开新窗口
-    window.open('./wallet.html', 'newwindow', `width=${width},height=${height},left=${left},top=${top}`);
+    window.open('https://yuhsien0411.github.io/Sui-web/wallet.html', 'newwindow', `width=${width},height=${height},left=${left},top=${top}`);
 }
 });
