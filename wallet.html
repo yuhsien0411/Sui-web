@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>錢包介面</title>
+    <link rel="stylesheet" href="./css/wallet.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <header>
+            <h1 style="text-align: center;">合約交互</h1>
+        </header>
+        <div class="wallet-content">
+            <div class="wallet-item">
+                <h2>服務名稱</h2>
+                <p>SUI Ｅａｒｎ</p>
+            </div>
+            <div class="wallet-item">
+                <h2>SUI網絡費</h2>
+                <p>0.003928 SUI ~ $0.003146</p>
+            </div>
+            <div class="wallet-item">
+              <h2>交易地址</h2>
+              <p>0x4b16...67d4</p>
+            </div>
+            <!-- <div class="wallet-item">
+                <h2>交易哈希</h2>
+                <p>0101</p>
+            </div> -->
+
+              <div class="action-buttons">
+                <button class="button button-confirm" onclick="closeWindow()">确定</button>
+                <button class="button button-cancel" style="color: black;" onclick="closeWindow()">取消</button>
+                <script>
+                  function closeWindow() {
+                      window.close();
+                  }
+                  </script>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>

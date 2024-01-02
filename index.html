@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>SUI　Ｅａｒｎ</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet"> 
+        
+        <link href="css/homePage.css" rel="stylesheet">
+        <!-- <link href="css/homePage.css" rel="stylesheet">       -->
+
+<!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi-back"></i>
+                        <span>Xian</span>
+                    </a>
+
+                    <!-- <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div> -->
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">借貸平台</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">如何運作</a>
+                            </li>
+                        </ul>
+
+                        <!-- <div class="d-none d-lg-block "> -->
+                        </div class="d-lg-none ms-auto me-4">
+                            <button class="enableSUIButton wallet-btn">Connect wallet</button>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h1 class="text-white text-center">SUI鏈上借貸套利</h1>
+                                
+                            <h6 class="text-center">Decentralized finance</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="featured-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-4 col-12 mb-4 mb-lg-0" >
+                            <div class="custom-block bg-white shadow-lg defiImg">
+
+                                
+                                <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">一鍵套利</h5>
+
+                                            <p class="mb-0" style="color: black; background-color: yellow;opacity: 0.5;">在Navi 存入穩定幣usdt並借出usdc賺取利差，利用循環貸年化>60%🚀</p>
+                                        </div>
+
+                                    </div>
+
+                                    
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block custom-block-overlay">
+                                <div class="d-flex flex-column h-100">
+                                    <img src="images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-overlay-text d-flex">
+                                        <div>
+                                            <h5 class="text-white mb-2">Finance</h5>
+
+                                            <p class="text-white navidata">Error</p>
+                                            
+                                            <div class="amount-container">
+                                               
+                                                <div class="amount-input">
+                                                    <input type="text" id="amount" placeholder="$0" oninput="updateAmount()" >
+                                                    <div class="wallet-balance">Wallet Balance:</div>
+                                                    <span id="wallet-balance-amount">0</span>
+                                                    <!-- <button id="max-btn">MAX</button> -->
+                                                    <span class="currency-logo">USDT</span> 
+                                                    <img src="https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png" alt="" style="height:40px">
+                                                   
+                                            
+                                                </div>
+                                                
+                                            </div>
+                                            <div>
+                                                循環貸年化:
+                                                <span id="result">
+                                                </span>
+                                            </div>
+                                            <button class="btn custom-btn mt-2 mt-lg-3 depositButton" >存入</button>
+                                            <button class="btn custom-btn mt-2 mt-lg-3 withdrawButton" >取出</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="section-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="explore-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4">借貸平台</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="true">SUI</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="https://app.naviprotocol.io/" target="_blank">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">借貸</h5>
+
+                                                            <p class="mb-0">navi protorol</p>
+                                                        </div>
+
+                                                    </div >
+                                                    <img src="https://avatars.githubusercontent.com/u/130048013?s=200&v=4" class="navi-icon custom-block-image img-fluid" alt="navi protocol logo">
+
+                                                </a> 
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="https://app.scallop.io/" target="_blank">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">借貸</h5>
+
+                                                                <p class="mb-0">Scallop</p>
+                                                        </div>
+
+                                                        <!-- <span class="badge bg-design rounded-pill ms-auto">75</span> -->
+                                                    </div>
+
+                                                    <img src="https://app.scallop.io/assets/logo-90847515.png" class="custom-block-image img-fluid" alt="" style="height: auto;">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="https://app.cetus.zone/swap" target="_blank">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">SWAP</h5>
+
+                                                                <p class="mb-0">Cetus</p>
+                                                        </div>
+
+                                                        <!-- <span class="badge bg-design rounded-pill ms-auto">100</span> -->
+                                                    </div>
+
+                                                    <img src="images/homePage/cetus_Logo.png" class="custom-block-image img-fluid" alt="" style="height: auto;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <!-- <a href="topics-detail.html"> -->
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">開發中</h5>
+
+                                                                <p class="mb-0">5555</p>
+                                                            </div>
+
+                                                            <!-- <span class="badge bg-advertising rounded-pill ms-auto">30</span> -->
+                                                        </div>
+
+                                                        <img src="images/homePage/undraw_online_ad_re_ol62.png" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="topics-detail.html">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">開發中</h5>
+
+                                                                <p class="mb-0">5555</p>
+                                                            </div>
+
+                                                            <!-- <span class="badge bg-advertising rounded-pill ms-auto">65</span> -->
+                                                        </div>
+
+                                                        <img src="images/homePage/undraw_Group_video_re_btu7.png" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-12">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="topics-detail.html">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">開發中</h5>
+
+                                                                <p class="mb-0">5555</p>
+                                                            </div>
+
+                                                            <!-- <span class="badge bg-advertising rounded-pill ms-auto">50</span> -->
+                                                        </div>
+
+                                                        <img src="images/homePage/undraw_Group_video_re_btu7.png" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                            </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="timeline-section section-padding" id="section_3">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <h2 class="text-white mb-4">如何運作?</h1>
+                        </div>
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="timeline-container">
+                                <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                    <div class="list-progress">
+                                        <div class="inner"></div>
+                                    </div>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">到NAVI的Market</h4>
+
+                                        <p class="text-white">找出USDT和USDC的Supply APY和Borrow APY的差價</p>
+                                        <!-- <p class="text-white">例如現在USDC </p> -->
+
+                                        <div class="icon-holder">
+                                          <i class="bi-search"></i>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <h4 class="text-white mb-3">實際操作</h4>
+
+                                        <p class="text-white">先到NAVI存入USDT並借出USDC，再到Cetus把USDC換成USDT，然後重複此動作</p>
+                          
+
+
+                                        <div class="icon-holder">
+                                          <i class="bi-bookmark"></i>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">坐享其成</h4>
+
+                                        <p class="text-white">躺在床上就可以賺錢</p>
+
+                                        <div class="icon-holder">
+                                          <i class="bi-book"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+<footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+                            <i class="bi-back"></i>
+                            <span>Xian</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Resources</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Home</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#section_3" class="site-footer-link">How it works</a>
+                            </li>
+
+                            <!-- <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">FAQs</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contact</a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <!-- <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Information</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                305-240-9671
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:info@company.com" class="site-footer-link">
+                                info@company.com
+                            </a>
+                        </p>
+                    </div> -->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            中文</button>
+
+                            <!-- <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Thai</button></li>
+
+                                <li><button class="dropdown-item" type="button">Myanmar</button></li>
+
+                                <li><button class="dropdown-item" type="button">Arabic</button></li>
+                            </ul> -->
+                        </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">相關網站: 
+                            <a rel="nofollow" href="https://www.naviprotocol.io/" target="_blank">Navi</a>
+                            <a rel="nofollow" href="https://www.cetus.zone/" target="_blank">Cetus</a>
+                            <a rel="nofollow" href="https://www.scallop.io/" target="_blank">Scallp</a>
+
+                            <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <!-- <script src="js/click-scroll.js"></script> -->
+        <script src="js/custom.js"></script>
+        <script src="js/wallet.js"></script>
+        <script src="js/homepage.js"></script>
+
+    </body>
+</html>
