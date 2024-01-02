@@ -1,0 +1,87 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* 背景色改为白色 */
+}
+
+.wallet-container {
+    color: #000; /* 文字颜色改为黑色 */
+    width: 360px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 阴影颜色改为淡黑色 */
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wallet-item {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.wallet-item h2 {
+    font-size: 1em;
+}
+
+.wallet-item p {
+    font-size: 0.8em;
+}
+
+
+
+/* 按钮容器的样式 */
+.action-buttons {
+    background-color: #FFFFFF; /* 按钮容器的背景色 */
+    padding: 12px 16px 20px; /* 容器的内边距，顺序是上 右 下 左 */
+    display: flex; /* 使用Flexbox来排列按钮 */
+    justify-content: space-around; /* 按钮之间有间隔 */
+    align-items: center; /* 垂直居中对齐 */
+    border-radius: 40px; /* 容器圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 容器阴影 */
+    width: 277px; /* 容器宽度 */
+    height: 80px; /* 容器高度 */
+    margin: auto; /* 如果需要，可以使容器在页面中居中 */
+}
+
+/* 通用按钮样式 */
+.button {
+    padding: 10px 20px;
+    border-radius: 20px; /* 按钮圆角 */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none; /* 移除聚焦时的轮廓 */
+    flex-grow: 1; /* 弹性空间分配，使按钮可以根据内容伸缩 */
+    margin: 0 8px; /* 按钮之间的间隔 */
+    transition: background-color 0.3s; /* 平滑背景色过渡效果 */
+}
+
+/* 确定按钮的样式 */
+.button-confirm {
+    background-color: black /* 确定按钮背景色 */
+}
+
+.button-confirm:hover {
+    background-color: rgba(20, 20, 20, 0.508); /* 鼠标悬停时的背景色变化 */
+}
+
+/* 取消按钮的样式 */
+.button-cancel {
+    background-color: #ffffff; /* 取消按钮背景色 */
+}
+
+.button-cancel:hover {
+    background-color: gray; /* 鼠标悬停时的背景色变化 */
+}
+
