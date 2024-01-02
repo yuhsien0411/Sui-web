@@ -25,7 +25,7 @@ function connectMetaMask() {
             });
     } else {
         // MetaMask not installed
-        alert("请安装MetaMask!");
+        alert("请安装OKX Wallet!");
     }
 }
 
@@ -39,7 +39,7 @@ document.querySelector('.depositButton').addEventListener('click', function() {
     var balance =0;
     // 检查钱包是否连接
     if (!isWalletConnected) {
-        alert('请先连接您的钱包！');
+        alert('请先連接您的钱包！');
     } else if (balance ==0){
     
         alert('餘額不足');
@@ -63,7 +63,7 @@ document.querySelector('.withdrawButton ').addEventListener('click', function() 
 
 // 检查钱包是否连接
 if (!isWalletConnected) {
-    alert('请先连接您的钱包！');
+    alert('请先連接您的钱包！');
 } else {
     // 新窗口的宽度和高度
     const width = 360;
